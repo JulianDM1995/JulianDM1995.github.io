@@ -1,1 +1,5 @@
-{"lastversion":1,"lastversionurl":"HHH","networksnames":["aa","bb","ccc"],"networksurls":["ddd","eee","fff"],"networksicons":["iii","jjj","kkk"]}
+{
+  "lastversion": "1.0",
+  "lastversionurl": "https://juliandm1995.github.io/ESP_Mango/download.html",
+  "librariesURL" : "https://juliandm1995.github.io/ESP_Mango/libraries.html"
+}
