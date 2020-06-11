@@ -1,6 +1,1 @@
-{
-  "lastversion": 1.0,
-  "lastversionurl" : "HHH",
-  "networks": ["aa","bb","ccc"],
-  "urls" : ["ddd","eee","fff"]
-}
+{"lastversion":1,"lastversionurl":"HHH","networksnames":["aa","bb","ccc"],"networksurls":["ddd","eee","fff"],"networksicons":["iii","jjj","kkk"]}
