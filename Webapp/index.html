@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Julián Medina">
+    <meta name="generator" content="V1.0">
+
+    <title>Banana Box</title>
+
+    <link href="./template/bootstrap.min.css" rel="stylesheet">
+    <link href="./template/ownStyles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container_3d" id="3d_model"></div>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bottom navbar</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">hola</a>
+                </li>
+                <li class="nav-item dropup">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropup</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="mx-2">
+                        <img src="./icons/textura0.svg" height="20" onclick='model.LoadModel(0);'>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="mx-2">
+                        <img src="./icons/textura0.svg" height="20" onclick='model.LoadModel(1);'>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="mx-2">
+                        <img src="./icons/textura0.svg" height="20" onclick='model.LoadModel(2);'>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="./main.js" type="module"></script>
+    <script src="./template/jquery-3.5.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="./template/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
