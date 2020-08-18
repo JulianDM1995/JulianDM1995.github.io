@@ -10,7 +10,7 @@
     <title>Test Medina-Gómez</title>
 </head>
 
-<div class="container my-5 p-3 " style="background-color: white; display: none" id="div0">
+<div class="container my-5 p-3 " style="background-color: white;" id="div0">
     <div class="row h-100 justify-content-center align-items-center">
         <p class="h1"> Test Medina-Gómez para quien sabe que</p>
     </div>
@@ -41,11 +41,12 @@
         <div class="mx-3">
             <label for="transitionTime">Milisegundos:</label>
         </div>
-        <input type="text" value="10000" id="transitionTime" placeholder="Milisegundos">
+        <input type="text" value="60000" id="transitionTime" placeholder="Milisegundos">
     </div>
 
     <div class="row h-100 justify-content-center align-items-center">
         <button type="button" class="btn btn-success btn-lg" onclick="empezarIntervalo()">Empezar</button>
+        <button type="button" class="btn btn-dark btn-lg">Contar color</button>
     </div>
 </div>
 
@@ -55,13 +56,22 @@
     </div>
 </div>
 
-<div class="container my-5 p-3" style="background-color: white; display: none" id="div2">
+<div class="container my-5 p-3" style="background-color: white;" id="div2">
     <div class="row h-100 justify-content-center align-items-center">
         <h4 class="display-4 text-center">Colores contados:
             <br>
-            <b id="coloresContados"> asd </b>
+            <b id="coloresContados"> xxx </b>
         </h4>
     </div>
+
+    <div class="row h-100 justify-content-center align-items-center mt-5">
+        <div id="degradado" style="height: 200px"></div>
+    </div>
+
+    <div class="row h-100 justify-content-center align-items-center mb-3">
+        <div id="colorSel" style="height: 50px"></div>
+    </div>
+
 
 </div>
 

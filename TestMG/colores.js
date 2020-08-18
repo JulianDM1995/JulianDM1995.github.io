@@ -29,7 +29,9 @@ function terminarIntervalo() {
     porcentaje = Math.floor(porcentaje)/100;
     document.getElementById("coloresContados").innerHTML = contadorBoton + " / " + contadorColores + "  -  " + porcentaje + "%"
     clearInterval(intervalo);
+    generarDegradado();
     vista(2);
+    rgbToHex(200,200,200);
 }
 
 let intervalo = null;
@@ -42,6 +44,8 @@ function empezarIntervalo() {
     g = 0;
     b = 0;
     vista(1);
+    stringDegradado = "";
+    stringCirculos = "";
     intervalo = window.setInterval(cambiarColor, periodo);
 }
 
@@ -52,6 +56,8 @@ function cambiarColor() {
         let new_b = Math.floor(map(time, 0, transition_time, b_min, b_max));
 
         if(r != new_r || g != new_g || b != new_b){
+            let Hex = "#" + componentToHex(new_r) + componentToHex(new_g) + componentToHex(new_b);
+            stringDegradado += '<rect x="'+contadorColores+'" y=2 width="1" height="5" style="fill:'+Hex+'"/>';
             contadorColores++;
         }
 
@@ -153,10 +159,26 @@ function llenarCanvas(canvasName, _r, _g, _b) {
 
 function contarColor(){
     contadorBoton++;
+    let Hex = "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+    stringCirculos += '<circle cx="'+(contadorColores-0.5)+'" cy="1" r="1" style="fill:'+Hex+'"  onclick="imprimirColor('+r+','+g+','+b+')"/>'
 }
 
 function vista(view) {
     document.getElementById("div0").style.display = view == 0 ? " block" : "none";
     document.getElementById("div1").style.display = view == 1 ? " block" : "none";
     document.getElementById("div2").style.display = view == 2 ? " block" : "none";
+}
+
+let stringDegradado = "";
+let stringCirculos = "";
+function generarDegradado(){
+    stringDegradado = '<svg xmlns="http://www.w3.org/2000/svg" data-name="Capa 1" height="100%" viewBox="0 0 '+contadorColores+' 10">'+stringDegradado+stringCirculos+'</svg>';
+    document.getElementById("degradado").innerHTML = stringDegradado;
+}
+
+function imprimirColor(_r,_g,_b){
+    console.log(_r,_g,_b);
+    let Hex = "#" + componentToHex(_r) + componentToHex(_g) + componentToHex(_b);
+    let text = '<svg data-name="Capa 1" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 15.13"><circle cx="5.5" cy="7.57" r="5" style="fill:'+Hex+';stroke:#000;stroke-miterlimit:10"/><text transform="translate(13.13 10.2)" style="font-size:12px;font-family:SegoeUI, Segoe UI">['+_r+','+_g+','+_b+']</text></svg>';
+    document.getElementById('colorSel').innerHTML = text;
 }

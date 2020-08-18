@@ -5,3 +5,13 @@ html, body {
   .full-height {
     height: 100%;
   }
+
+  .active {
+    background-color: green !important;
+  }
+
+  .btn-dark:active {
+    color: #ffffff; 
+    background-color: #0202f5; 
+    border-color: #494F57;
+  }
