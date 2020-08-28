@@ -6,7 +6,7 @@ let r_min = 255;
 let g_min = 0;
 let b_min = 0;
 
-let r_max = 255;
+let r_max = 0;
 let g_max = 0;
 let b_max = 255;
 
@@ -172,7 +172,7 @@ function vista(view) {
 let stringDegradado = "";
 let stringCirculos = "";
 function generarDegradado(){
-    stringDegradado = '<svg xmlns="http://www.w3.org/2000/svg" data-name="Capa 1" height="100%" viewBox="0 0 '+contadorColores+' 10">'+stringDegradado+stringCirculos+'</svg>';
+    stringDegradado = '<svg xmlns="http://www.w3.org/2000/svg" data-name="Capa 1" width="100%" viewBox="0 0 '+contadorColores+' 10">'+stringDegradado+stringCirculos+'</svg>';
     document.getElementById("degradado").innerHTML = stringDegradado;
 }
 

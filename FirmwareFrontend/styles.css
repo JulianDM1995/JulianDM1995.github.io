@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.cabecera{
+  background-color: #001B48;
+}
+
+.buttonSSID {
+  width: 300px;
+  overflow: hidden;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.containerbody{
+  padding-bottom: 150px;
+
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.dropdown-item{
+  display: flex;
+  padding: 5px 20px 5px 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #001B48;
+}
+
+.footertext{
+  color: #FFF;
+}
