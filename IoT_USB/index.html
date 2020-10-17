@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sistema de monitorización</title>
+
+  <link rel="canonical" href="">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./index_files/dashboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Cabecera -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <img src="./Multimedia/logo.png" height="42">
+    <a class="navbar-brand ml-2" href="#">Universidad de San Buenaventura Cali</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- barra lateral -->
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" id="tagPrototipo1" onclick="cambiarPrototipoSeleccionado(1)" href="#">
+                Prototipo 1
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tagPrototipo2" onclick="cambiarPrototipoSeleccionado(2)" href="#">
+                Prototipo 2
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tagPrototipo3" onclick="cambiarPrototipoSeleccionado(3)" href="#">
+                Prototipo 3
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tagPrototipo4" onclick="cambiarPrototipoSeleccionado(4)" href="#">
+                Prototipo 4
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Cuerpo -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+        <h1 class="h1 mt-3" id="numero_prototipo">Temperatura</h1>
+
+        <!-- Grafica temperatura -->
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Temperatura</h1>
+        </div>
+
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1533" height="646"
+          style="display: block; height: 588px; width: 1394px;"></canvas>
+
+        <!-- Grafica humedad -->
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Humedad</h1>
+        </div>
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart2" width="1533" height="646"
+          style="display: block; height: 588px; width: 1394px;"></canvas>
+
+        <!--Tabla datos -->
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Datos</h1>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Temperatura 1</th>
+                <th>Temperatura 2</th>
+                <th>Temperatura 3</th>
+                <th>Temperatura 4</th>
+                <th>Humedad 1</th>
+                <th>Humedad 2</th>
+                <th>Humedad 3</th>
+                <th>Humedad 4</th>
+              </tr>
+            </thead>
+            <tbody id="datosTabla">
+
+            </tbody>
+          </table>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./index_files/jquery-3.4.1.slim.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="./index_files/popper.min.js"></script>
+  <script src="./index_files/bootstrap.min.js"></script>
+  <script src="./index_files/Chart.min.js"></script>
+  <script src="./FuncionesPropias/funcionesGraficas.js"></script>
+  <script src="./FuncionesPropias/funcionesTabla.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase.js"></script> <!-- API de Firebase -->
+  <script src="./FuncionesPropias/funcionesFirebase.js"></script>
+  <script src="./FuncionesPropias/funcionesInterfaz.js"></script>
+  <script type="text/javascript" src="./crypto-js/crypto-js.js"></script>
+  <script src="./FuncionesPropias/desencriptar.js"></script>
+</body>
+
+</html>
