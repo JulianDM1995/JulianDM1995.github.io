@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agenda Cafetera</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="navbar_n_body.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+	<div id="topnav"></div>
+
+	<div style="margin-left: 20%; margin-right: 20%;">
+
+		<div id="div_home">
+
+			<h1>Datos de sensores: </h1>
+
+			<div class="sensordiv">
+				<div class="sensorname">longitud</div>
+				<div class="sensorvalue" id="longitud">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">latitud</div>
+				<div class="sensorvalue" id="latitud">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">altitud</div>
+				<div class="sensorvalue" id="altitud">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">satellites</div>
+				<div class="sensorvalue" id="satellites">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">altitud1</div>
+				<div class="sensorvalue" id="altitud1">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">ultimoDatoGPS</div>
+				<div class="sensorvalue" id="ultimoDatoGPS">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">charsGPS</div>
+				<div class="sensorvalue" id="charsGPS">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">precipitacion</div>
+				<div class="sensorvalue" id="precipitacion">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">velocidad_viento</div>
+				<div class="sensorvalue" id="velocidad_viento">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">direccion_viento</div>
+				<div class="sensorvalue" id="direccion_viento">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">temperatura interior</div>
+				<div class="sensorvalue" id="temperatura0">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">temperatura exterior</div>
+				<div class="sensorvalue" id="temperatura1">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">humedad</div>
+				<div class="sensorvalue" id="humedad">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">presion</div>
+				<div class="sensorvalue" id="presion">__</div>
+			</div>
+			<div class="sensordiv">
+				<div class="sensorname">luminosidad</div>
+				<div class="sensorvalue" id="luminosidad">__</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="nnb_footer">
+		<div>
+			<p style="margin-bottom: 0;">Agenda Cafetera | 2021</p>
+			<p class="ver" id="version">Firmware: </p>
+		</div>
+	</div>
+
+	<script src="navbar_n_body.js"></script>
+	<script src="index.js"></script>
+	<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+	<script src="MQTTController.js"></script>
+	<script src="ConnEvt_MQTT.js"></script>
+	<script src="ArduinoToMQTT.js"></script>
+	<script src="MQTTToArduino.js"></script>
+
+</body>
+
+</html>

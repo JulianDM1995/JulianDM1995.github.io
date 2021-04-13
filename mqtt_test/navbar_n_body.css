@@ -1,0 +1,217 @@
+:root {
+    --bar_position: absolute;
+    --bar_height: 80px;
+    --wrapped_bar_height: 40px;
+    --bar_elements_separation: 0px 20px 0px 20px;
+    --bar_color: #811336;
+    --main_icon_width: 130px;
+    --active_color: #561029;
+    --active_hover_color: #ddd;
+    --active_hover_font_color: #000;
+    --active_font_color: #fff;
+    --no_active_color: #0000;
+    --no_active_font_color: #f2f2f2;
+    --no_active_hover_color: #ddd;
+    --no_active_hover_font_color: #000;
+    --wrapped_icon_height: 30px;
+    --wrapped_icon_color: #f2f2f2;
+    --wrapped_bar_space: 8px;
+    --liveSVG_icon_height: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+.topnav {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: var(--bar_color);
+    position: var(--bar_position);
+    min-height: var(--bar_height);
+    width: 100%;
+    z-index: 1000;
+}
+
+.topnav *{
+   margin: 0px;
+   padding: 0px;
+   border: none;
+}
+
+.nnb_icon {
+    float: left;
+    height: var(--bar_height);
+    padding: var(--bar_elements_separation);
+}
+
+.nnb_icon img {
+    height: 100%;
+    width: var(--main_icon_width);
+}
+
+.nnb_active {
+    float: left;
+    display: flex;
+    color: var(--active_font_color);
+    text-align: center;
+    height: var(--bar_height);
+    text-decoration: none;
+    font-size: 120%;
+    line-height: var(--bar_height);
+    background-color: var(--active_color);
+    padding: var(--bar_elements_separation);
+}
+
+.nnb_active:hover {
+    background-color: var(--active_hover_color);
+    color: var(--active_hover_font_color);
+}
+
+.nnb_active img {
+    margin-right: 5px;
+}
+
+.nnb_active svg {
+    margin-right: 5px;
+    fill: var(--active_font_color);
+    ;
+}
+
+.nnb_active:hover svg {
+    margin-right: 5px;
+    fill: var(--active_hover_font_color);
+    ;
+}
+
+.nnb_no_active {
+    float: left;
+    display: flex;
+    color: var(--no_active_font_color);
+    background-color: var(--no_active_color);
+    text-align: center;
+    height: var(--bar_height);
+    text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 120%;
+    line-height: var(--bar_height);
+    padding: var(--bar_elements_separation);
+}
+
+.nnb_no_active:hover {
+    background-color: var(--no_active_hover_color);
+    color: var(--no_active_hover_font_color);
+}
+
+.nnb_no_active img {
+    margin-right: 5px;
+}
+
+.nnb_no_active svg {
+    margin-right: 5px;
+    fill: var(--no_active_font_color);
+    ;
+}
+
+.nnb_no_active:hover svg {
+    margin-right: 5px;
+    fill: var(--no_active_hover_font_color);
+    ;
+}
+
+.nnb_right {
+    float: right;
+
+}
+
+.nnb_hamburger {
+    display: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nnb-bar-icon {
+    fill: var(--wrapped_icon_color);
+    pointer-events: none;
+}
+
+.nnb_space {
+    display: none;
+    height: var(--wrapped_bar_space);
+}
+
+.nnb_line {
+    display: block;
+    height: 1px;
+    background-color: var(--active_color);
+    margin: var(--bar_elements_separation);
+}
+
+.nnb_margin {
+    height: var(--bar_height);
+}
+
+.nnb_footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bar_color);
+    color: var(--no_active_font_color);
+    text-align: center;
+ }
+
+@media only screen and (max-width: 500px) {
+    :root {
+        --bar_padding: 0px 0px 0px 0px;
+    }
+    .topnav {
+        display: grid;
+        top: 0px;
+        margin-bottom: 100px;
+    }
+    .nnb_right {
+        display:  grid;
+    }
+    .nnb_icon {
+        height: var(--bar_height);
+        float: none;
+    }
+    .nnb_icon img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nnb_active {
+        height: var(--wrapped_bar_height);
+        line-height: var(--wrapped_bar_height);
+        text-align: left;
+    }
+    .nnb_space {
+        display: block;
+    }
+    .nnb_show_or_hide {
+        display: none;
+    }
+    .nnb_no_active {
+        height: var(--wrapped_bar_height);
+        line-height: var(--wrapped_bar_height);
+        text-align: left;
+    }
+    .nnb_hamburger {
+        display: block;
+        position: absolute;
+        top: calc(0.5 * var(--bar_height) - 0.5 * var(--wrapped_icon_height));
+        right: calc(0.5 * var(--bar_height) - 0.5 * var(--wrapped_icon_height));
+        z-index: 11;
+        background: none;
+        border: none;
+    }
+    .nbb_wrapped_icon{
+        height: var(--wrapped_bar_height);
+    }
+    .nnb_top_margin {
+        height: var(--bar_height);
+    }
+}
