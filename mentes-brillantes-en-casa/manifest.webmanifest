@@ -1,0 +1,15 @@
+{
+  "name": "Mentes Brillantes en Casa",
+  "short_name": "MB en Casa",
+  "description": "Juegos y actividades del Jardín Infantil Mentes Brillantes para compartir en familia.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4fbff",
+  "theme_color": "#0b4aa2",
+  "lang": "es-CO",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
