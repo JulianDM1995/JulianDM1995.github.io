@@ -1,4 +1,4 @@
-const CACHE='mb-en-casa-v10';
+const CACHE='mb-en-casa-v11';
 const ASSETS=['./','./index.html','./descubro-quien-soy.html','./animales-grandes-pequenos.html','./pelotitas-amigas.html','./manifest.webmanifest','./logo.svg','./icon.svg','./familias.css','./familias.js'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting();});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim();});
