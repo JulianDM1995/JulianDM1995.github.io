@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes · Actos de terrorismo en Colombia 2003–2026</title>
+<style>
+  :root { --ink:#1b1a17; --dim:#6b665d; --line:#dcd6ca; --paper:#f7f4ee; --accent:#c8401f; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#ece6da; --dim:#a09a8f; --line:#35322d; --paper:#11100e; --accent:#ff7a52; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 56px 24px 96px; }
+  h1 { font-size: 40px; line-height:1.1; margin:0 0 8px; font-weight:500; }
+  h2 { font-size: 25px; margin: 56px 0 6px; font-weight:500; }
+  h2 small { display:block; font:12px/1.4 ui-monospace, Menlo, monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin-bottom:6px; }
+  p { margin: 10px 0; max-width: 72ch; }
+  .lede { color:var(--dim); }
+  a { color: var(--accent); }
+  .scroll { overflow-x:auto; }
+  table { border-collapse: collapse; width:100%; margin: 14px 0; font: 14px/1.45 ui-sans-serif, system-ui, sans-serif; }
+  th, td { text-align:left; vertical-align:top; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); }
+  th { font-weight:600; color:var(--dim); font-size:12px; letter-spacing:.06em; text-transform:uppercase; }
+  td.n, th.n { text-align:right; font-variant-numeric: tabular-nums; white-space:nowrap; }
+  .limit { border-left: 3px solid var(--accent); padding: 2px 0 2px 16px; margin: 16px 0; }
+  code { font: 13px ui-monospace, Menlo, monospace; }
+</style>
+<main>
+<h1>Fuentes del video «Actos de terrorismo en Colombia»</h1>
+<p class="lede">De dónde sale cada cosa que el video muestra o dice, en el orden en que aparece. Datos descargados el 24 de noviembre de 2026; la serie llega hasta el 31 oct 2026. El video sigue hasta el 23 nov 2026 para nombrar el atentado más reciente: en esos días no hay puntos, porque el Ministerio aún no los ha publicado.</p>
+
+<h2><small>Título, contador y puntos del mapa</small>«Cada punto, un acto registrado» · 15.981 actos</h2>
+<p>Ministerio de Defensa Nacional, conjunto «Terrorismo» en datos.gov.co: <a href="https://www.datos.gov.co/d/yi5j-5fe9">datos.gov.co</a>. Cada fila es una fecha, un municipio y una cantidad de actos; el video dibuja un punto por acto, del 1 ene 2003 al 31 oct 2026.</p>
+<div class="limit"><p>El conjunto no describe cada acto: no dice qué pasó, contra quién, quién lo hizo ni cuántas víctimas dejó. «Acto de terrorismo» es la categoría del propio Ministerio.</p>
+<p>El punto se dibuja en el municipio, no en el lugar exacto: se ubica en la coordenada del municipio y se desplaza unos píxeles al azar para que los actos de un mismo municipio no se tapen.</p></div>
+<p>Coordenadas de los municipios: DANE, «DIVIPOLA – Códigos municipios», <a href="https://www.datos.gov.co/d/gdxc-w37w">datos.gov.co</a>. Contorno de los departamentos: archivo GeoJSON público de John Alexis Guerra Gómez, <a href="https://gist.github.com/john-guerra/43c7656821069d00dcbc">gist.github.com/john-guerra</a>. San Andrés y Providencia quedan fuera del encuadre.</p>
+
+<h2><small>Puntos más grandes sobre el mapa</small>Atentados documentados con víctimas</h2>
+<p>Centro Nacional de Memoria Histórica, Observatorio de Memoria y Conflicto (SIEVCAC), «Casos AT – Atentados terroristas»: <a href="https://www.datos.gov.co/d/yfd7-8c9d">datos.gov.co</a>. Son 194 casos desde 2003, cada uno con sus coordenadas. Se dibujan como un punto claro, más grande y con un destello más ancho cuanto mayor es el número de muertos y lesionados que registra la ficha: del tamaño de un acto cuando no registra víctimas, hasta unas cuatro veces en el caso más grave. No entran en el contador, que cuenta solo los actos del Ministerio.</p>
+
+<h2><small>Colores de los puntos</small>Grupo armado</h2>
+<p>El Ministerio no dice quién cometió cada acto. El color sale de cruzar cada acto con los registros de otras fuentes en el <em>mismo municipio</em> y el <em>mismo día, el anterior o el siguiente</em>; si alguno nombra un grupo, el acto toma ese color. Fuentes del cruce, en orden de prioridad:</p>
+<table>
+<tr><th>Fuente</th><th>Conjunto</th></tr>
+<tr><td>CNMH · Atentados terroristas</td><td><a href="https://www.datos.gov.co/d/yfd7-8c9d">datos.gov.co</a></td></tr>
+<tr><td>CNMH · Ataques a poblados</td><td><a href="https://www.datos.gov.co/d/3xsy-8xcp">datos.gov.co</a></td></tr>
+<tr><td>CNMH · Acciones bélicas (solo hostigamientos, emboscadas y ataques a instalaciones)</td><td><a href="https://www.datos.gov.co/d/39qq-a72j">datos.gov.co</a></td></tr>
+<tr><td>CNMH · Daño a bienes civiles</td><td><a href="https://www.datos.gov.co/d/x27p-cm5t">datos.gov.co</a></td></tr>
+<tr><td>UCDP Georeferenced Event Dataset 25.1 (hasta 2024)</td><td><a href="https://ucdp.uu.se/downloads/">ucdp.uu.se/downloads</a></td></tr>
+</table>
+<div class="scroll"><table>
+<tr><th>Color</th><th class=n>Actos</th><th class=n>Parte</th></tr>
+<tr><td>FARC</td><td class=n>2.230</td><td class=n>14,0%</td></tr><tr><td>Disidencias de las FARC</td><td class=n>503</td><td class=n>3,1%</td></tr><tr><td>ELN</td><td class=n>543</td><td class=n>3,4%</td></tr><tr><td>Paramilitares</td><td class=n>39</td><td class=n>0,2%</td></tr><tr><td>Clan del Golfo y afines</td><td class=n>156</td><td class=n>1,0%</td></tr><tr><td>Sin atribuir</td><td class=n>12.510</td><td class=n>78,3%</td></tr>
+</table></div>
+<div class="limit"><p>Es una atribución por coincidencia de lugar y fecha, no un dato del Ministerio: puede asignar a un acto el grupo de otro hecho ocurrido el mismo día en el mismo municipio. Cuatro de cada cinco actos quedan «sin atribuir», y casi todos los de los últimos años, porque el CNMH documenta con rezago y UCDP termina en 2024.</p>
+<p>«Disidencias de las FARC» reúne lo que las fuentes llaman disidencia FARC, FARC-EMC, Segunda Marquetalia, Frente Oliver Sinisterra y Comandos de la Frontera. «Clan del Golfo y afines» reúne Urabeños / Autodefensas Gaitanistas / EGC, Rastrojos, Águilas Negras, Paisas, Pachenca, Costeños y Libertadores del Vichada. «Paramilitares» son las AUC y sus bloques.</p></div>
+
+<h2><small>Línea de tiempo</small>Barras por mes</h2>
+<p>La misma serie del Ministerio de Defensa, contada por mes. La altura es el número de actos del mes; el color repite la altura (de amarillo a rojo) y llega al rojo pleno en el percentil 95, para que un solo mes atípico no deje todo lo demás del mismo tono. Detrás de las barras, una franja por gobierno, una oscura y la siguiente clara, deja ver dónde empieza y termina cada uno.</p>
+
+<h2><small>Nombre y franjas de presidentes</small>Periodos de gobierno</h2>
+<p>Los periodos van de posesión a posesión (7 de agosto). Uribe y Santos tuvieron dos gobiernos consecutivos y el video los separa. El video muestra quién gobernaba y las franjas de cada periodo; no dice cifras por gobierno. Las de esta tabla van como contexto: el total de actos de cada periodo y su promedio mensual, que es ese total dividido entre sus meses <em>cubiertos por la serie</em>.</p>
+<div class="scroll"><table>
+<tr><th>Franja</th><th>Presidente</th><th>Gobierno</th><th>Tramo contado</th><th class=n>Actos</th><th class=n>Al mes</th></tr>
+<tr><td>Uribe I</td><td>Álvaro Uribe Vélez</td><td>7 ago 2002 – 7 ago 2006</td><td>1 ene 2003 – 6 ago 2006</td><td class=n>2.312</td><td class=n>54</td></tr><tr><td>Uribe II</td><td>Álvaro Uribe Vélez</td><td>7 ago 2006 – 7 ago 2010</td><td>7 ago 2006 – 6 ago 2010</td><td class=n>1.328</td><td class=n>28</td></tr><tr><td>Santos I</td><td>Juan Manuel Santos</td><td>7 ago 2010 – 7 ago 2014</td><td>7 ago 2010 – 6 ago 2014</td><td class=n>2.248</td><td class=n>47</td></tr><tr><td>Santos II</td><td>Juan Manuel Santos</td><td>7 ago 2014 – 7 ago 2018</td><td>7 ago 2014 – 6 ago 2018</td><td class=n>2.684</td><td class=n>56</td></tr><tr><td>Duque</td><td>Iván Duque Márquez</td><td>7 ago 2018 – 7 ago 2022</td><td>7 ago 2018 – 6 ago 2022</td><td class=n>2.644</td><td class=n>55</td></tr><tr><td>Petro</td><td>Gustavo Petro Urrego</td><td>7 ago 2022 – 7 ago 2026</td><td>7 ago 2022 – 6 ago 2026</td><td class=n>4.418</td><td class=n>92</td></tr><tr><td>De la Espriella</td><td>Abelardo de la Espriella</td><td>7 ago 2026 – en curso</td><td>7 ago 2026 – 31 oct 2026</td><td class=n>347</td><td class=n>123</td></tr>
+</table></div>
+<div class="limit"><p>El primer gobierno de Uribe empezó el 7 de agosto de 2002, pero la serie arranca en 2003: sus cifras no incluyen los primeros cinco meses. El de De la Espriella lleva menos de tres meses contados; su promedio no es comparable todavía con el de un periodo completo.</p>
+<p>La cifra de un periodo no dice nada por sí sola sobre sus causas: los registros dependen también de cómo y cuánto reporta el Ministerio cada año.</p></div>
+<p>Fechas de los gobiernos: <a href="https://es.wikipedia.org/wiki/Anexo:Presidentes_de_Colombia">Anexo: Presidentes de Colombia (Wikipedia)</a>. Posesión de Abelardo de la Espriella el 7 de agosto de 2026: <a href="https://www.elpais.com.co/politica/abelardo-de-la-espriella-asumio-la-presidencia-de-colombia-en-cali-asi-fue-la-jornada-de-posesion-0728.html">El País (Cali)</a>, <a href="https://www.vanguardia.com/colombia/2026/08/07/abelardo-de-la-espriella-tomo-posesion-como-nuevo-presidente-de-colombia-2026-2030/">Vanguardia</a>.</p>
+
+<h2><small>Textos sobre el mapa</small>Los atentados que el video nombra</h2>
+<p>Los escogió el autor entre los más conocidos del periodo; no son una selección de ninguna fuente. El texto es propio, y lleva cifra solo cuando las fuentes coinciden.</p>
+<div class="scroll"><table>
+<tr><th>Fecha</th><th>Lugar</th><th>Texto del video</th><th>Fuente</th><th>Cifras según las fuentes</th></tr>
+<tr><td>7 feb 2003</td><td>Bogotá</td><td>«Carro bomba en el Club El Nogal: 36 muertos»</td><td><a href="https://www.eltiempo.com/justicia/delitos/club-el-nogal-historia-de-un-atentado-619423">eltiempo.com</a></td><td>36 muertos según El Tiempo y el CNMH; una columna habla de 39.</td></tr><tr><td>14 feb 2003</td><td>Neiva, Huila</td><td>«Estalla una casa bomba en Neiva: 15 muertos»</td><td><a href="https://www.policia.gov.co/noticia/policia-nacional-realizo-un-acto-memoria-con-fin-dignificar-honrar-las-victimas-del">policia.gov.co</a></td><td>15 muertos según una sentencia judicial y el CNMH; la Policía cuenta 16 y otras fuentes 13.</td></tr><tr><td>19 oct 2006</td><td>Bogotá</td><td>«Carro bomba en la Escuela Superior de Guerra»</td><td><a href="https://www.elespectador.com/bogota/bogota-una-vez-mas-azotada-por-la-violencia-implicaciones-y-desafios-article-834593/">elespectador.com</a></td><td>Entre 23 y 25 heridos según la fuente.</td></tr><tr><td>12 ago 2010</td><td>Bogotá</td><td>«Carro bomba frente a Caracol Radio»</td><td><a href="https://cpj.org/es/2010/08/cpj-insta-a-colombia-a-investigar-ataque-con-carro/">cpj.org</a></td><td>Entre 5 y 9 heridos según la fuente; el CNMH registra 47 lesionados.</td></tr><tr><td>9 jul 2011</td><td>Toribío, Cauca</td><td>«Una chiva bomba destruye el centro de Toribío»</td><td><a href="https://www.elpais.com.co/judicial/atentado-de-las-farc-en-toribio-cauca-deja-460-casas-destruidas.html">elpais.com.co</a></td><td>Entre 3 y 4 muertos y más de 100 heridos; unas 460 casas dañadas.</td></tr><tr><td>1 feb 2012</td><td>Tumaco, Nariño</td><td>«Bomba contra la estación de policía de Tumaco»</td><td><a href="https://www.hrw.org/es/news/2012/02/03/colombia-debe-investigar-atentados-con-explosivos-en-la-region-suroeste">hrw.org</a></td><td>Las cifras de muertos van de 5 (HRW, citando a la alcaldía) a 9 (El Tiempo, CNMH); por eso el video no dice cifra.</td></tr><tr><td>15 may 2012</td><td>Bogotá</td><td>«Atentado contra el exministro Fernando Londoño: 2 muertos»</td><td><a href="https://cancilleria.gov.co/sala-de-prensa/noticias/la-comunidad-internacional-se-solidariza-con-colombia-y-rechaza-atentado-terrorista">cancilleria.gov.co</a></td><td>2 muertos (el conductor y un escolta) y más de 50 heridos.</td></tr><tr><td>17 jun 2017</td><td>Bogotá</td><td>«Bomba en el Centro Comercial Andino: tres mujeres muertas»</td><td><a href="https://www.noticiascaracol.com/colombia/bogota/atentado-en-el-andino-tres-muertos-nueve-capturados-y-una-mujer-profuga">noticiascaracol.com</a></td><td>3 mujeres muertas y entre 8 y 9 heridos.</td></tr><tr><td>27 ene 2018</td><td>Barranquilla</td><td>«Bomba en la estación de policía San José: 5 policías muertos»</td><td><a href="https://www.noticiascaracol.com/colombia/atentado-contra-cai-de-san-jose-en-barranquilla-dejo-cinco-policias-muertos">noticiascaracol.com</a></td><td>5 policías muertos y unos 42 heridos; el primer parte fue de 4 y El Heraldo habló después de 6.</td></tr><tr><td>17 ene 2019</td><td>Bogotá</td><td>«Carro bomba en la Escuela General Santander: 22 muertos»</td><td><a href="https://www.elespectador.com/bogota/once-muertos-y-87-heridos-tras-explosion-de-carrobomba-en-la-escuela-general-santander-article-834496/">elespectador.com</a></td><td>22 cadetes muertos en el balance final; los primeros partes hablaban de 9, 11 y 21.</td></tr><tr><td>15 jun 2021</td><td>Cúcuta</td><td>«Carro bomba en la Brigada 30 del Ejército»</td><td><a href="https://www.elespectador.com/judicial/treinta-y-seis-heridos-dejo-explosion-de-carro-bomba-en-base-militar-de-cucuta/">elespectador.com</a></td><td>36 heridos.</td></tr><tr><td>2 sep 2022</td><td>San Luis, Huila</td><td>«Emboscada con explosivos: 7 policías muertos»</td><td><a href="https://www.elpais.com.co/judicial/un-policia-sobrevivio-al-atentado-en-el-huila-donde-asesinaron-a-siete-uniformados.html">elpais.com.co</a></td><td>7 policías muertos y un sobreviviente; los primeros partes hablaban de 8.</td></tr><tr><td>10 jun 2025</td><td>Cali y norte del Cauca</td><td>«Ola de atentados con explosivos en Cali y el Cauca»</td><td><a href="https://www.eltiempo.com/justicia/conflicto-y-narcotrafico/terrorismo-de-mordisco-deja-ocho-muertos-en-24-ataques-en-valle-y-cauca-en-apenas-cinco-horas-3462220">eltiempo.com</a></td><td>Entre 16 y 24 acciones y 8 muertos según el balance.</td></tr><tr><td>21 ago 2025</td><td>Cali</td><td>«Camión bomba junto a la base aérea de Cali»</td><td><a href="https://cnnespanol.cnn.com/2025/08/21/colombia/muertos-heridos-explosion-base-cali-colombia-orix">cnnespanol.cnn.com</a></td><td>Entre 5 y 7 muertos y de 36 a más de 70 heridos según el balance.</td></tr><tr><td>7 ago 2026</td><td>Varios departamentos</td><td>«Al menos 12 ataques el día de la posesión presidencial»</td><td><a href="https://www.bluradio.com/nacion/al-menos-12-ataques-terroristas-se-registraron-en-medio-de-la-posesion-de-de-la-espriella-rg10">bluradio.com</a></td><td>12 ataques según Blu Radio; otro medio cuenta 13.</td></tr><tr><td>23 nov 2026</td><td>Villavicencio</td><td>«Carro bomba frente a la Gobernación del Meta»</td><td><a href="https://cnnespanol.cnn.com/2026/11/24/colombia/atentado-meta-colombia-bomba-heridos-efe">cnnespanol.cnn.com</a></td><td>Al menos 23 heridos según EFE; otros medios cuentan 25. Sin autoría confirmada al 24 de noviembre de 2026.</td></tr>
+</table></div>
+
+<h2><small>Fotografías</small>Presidentes</h2>
+<p>Todas de Wikimedia Commons, mostradas en blanco y negro y recortadas.</p>
+<div class="scroll"><table>
+<tr><th>Presidente</th><th>Archivo</th><th>Autor</th><th>Licencia</th></tr>
+<tr><td>Álvaro Uribe Vélez</td><td><a href="https://commons.wikimedia.org/wiki/File:%C3%81lvaro_Uribe_(cropped).jpg">Álvaro Uribe (cropped).jpg</a></td><td>Center for American Progress</td><td>CC BY-SA 2.0</td></tr><tr><td>Juan Manuel Santos</td><td><a href="https://commons.wikimedia.org/wiki/File:Juan_Manuel_Santos_in_2018.jpg">Juan Manuel Santos in 2018.jpg</a></td><td>Cancillería de Perú on Flickr.</td><td>CC BY-SA 2.0</td></tr><tr><td>Iván Duque Márquez</td><td><a href="https://commons.wikimedia.org/wiki/File:Iv%C3%A1n_Duque,_oct_2021_1.1.jpg">Iván Duque, oct 2021 1.1.jpg</a></td><td>Palácio do Planalto from Brasilia, Brasil</td><td>CC BY 2.0</td></tr><tr><td>Gustavo Petro Urrego</td><td><a href="https://commons.wikimedia.org/wiki/File:Presidente_Gustavo_Petro_U.jpg">Presidente Gustavo Petro U.jpg</a></td><td>Presidencia de Colombia</td><td>Public domain</td></tr><tr><td>Abelardo de la Espriella</td><td><a href="https://commons.wikimedia.org/wiki/File:Colombian_Presidential_Candidate_Abelardo_de_la_Espriella_(cropped).jpg">Colombian Presidential Candidate Abelardo de la Espriella (cropped).jpg</a></td><td>Abelardo de la Espriella</td><td>CC0</td></tr>
+</table></div>
+
+<h2><small>Sonido</small>Música</h2>
+<p>«Echoes of Time v2», Kevin MacLeod (<a href="https://incompetech.com">incompetech.com</a>). Licencia Creative Commons Atribución 4.0: <a href="https://creativecommons.org/licenses/by/4.0/">creativecommons.org</a>. El crédito debe acompañar al video donde se publique.</p>
+
+<h2><small>Lo que el video no usa</small>Otras bases consultadas</h2>
+<p>Policía Nacional, «Reporte delito terrorismo» (<a href="https://www.datos.gov.co/d/37p5-impc">datos.gov.co</a>); Ministerio de Defensa, «Voladura de oleoductos» (<a href="https://www.datos.gov.co/d/ec2r-4byk">datos.gov.co</a>) y «Voladura de puentes y vías» (<a href="https://www.datos.gov.co/d/m98b-cdys">datos.gov.co</a>). Están descargadas y estandarizadas en el proyecto, pero no entran en el video. La Global Terrorism Database (1970–2020) no se usó: exige registro y es de uso no comercial.</p>
+</main>
+</html>
